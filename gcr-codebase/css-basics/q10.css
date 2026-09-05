@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #263238;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+
+    background-color: rgba(38, 50, 56, 0.95);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 6%;
+
+    z-index: 100;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+
+    min-height: 90vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("https://picsum.photos/id/1018/1600/900");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    position: absolute;
+
+    color: white;
+    padding: 30px;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.hero-content a {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background-color: #ff9800;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    outline: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.top-button {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1565c0;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    z-index: 50;
+}
+
+.about {
+    position: relative;
+
+    min-height: 60vh;
+
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    background-color: #e3f2fd;
+}
+
+.about-text,
+.about-image {
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+
+    border: 5px solid #1565c0;
+    border-radius: 15px;
+
+    outline: 2px solid #90caf9;
+}
+
+.services {
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff3e0,
+            #ffe0b2
+        );
+
+    text-align: center;
+}
+
+.services > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.service-box {
+    position: relative;
+
+    background-color: white;
+
+    padding: 35px;
+
+    min-height: 220px;
+
+    border: 2px solid #ff9800;
+    border-radius: 12px;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.service-box p {
+    line-height: 1.7;
+}
+
+.contact {
+    padding: 80px 8%;
+
+    background-color: #e8f5e9;
+
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 2px solid #81c784;
+    border-radius: 8px;
+
+    font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+.contact button {
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2e7d32;
+    color: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+footer {
+    background-color: #263238;
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header nav a {
+        margin: 0 8px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+}

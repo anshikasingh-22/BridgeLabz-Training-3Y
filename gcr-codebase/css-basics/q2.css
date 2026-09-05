@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 3vh;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #37474f;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 2em;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ffcc80;
+}
+
+.section {
+    min-height: 55vh;
+    width: 100%;
+    padding: 8vh 10%;
+    border-bottom: 4px solid white;
+}
+
+.section h2 {
+    margin-bottom: 2rem;
+}
+
+.home {
+    background: linear-gradient(
+        135deg,
+        #90caf9,
+        #e3f2fd
+    );
+
+    background-attachment: fixed;
+}
+
+.home h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home p {
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.places {
+    background: radial-gradient(
+        circle,
+        #fff3e0,
+        #ffcc80
+    );
+
+    background-attachment: fixed;
+}
+
+.places h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.places > p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.place-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    margin: 1.5rem 0;
+    border: 2px solid #ef6c00;
+    border-radius: 10px;
+}
+
+.place-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.food {
+    background-color: #dcedc8;
+    background-attachment: fixed;
+}
+
+.food h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.food p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 1rem;
+    }
+
+    .section {
+        padding: 6vh 7%;
+    }
+
+    .home h2 {
+        font-size: 2rem;
+    }
+
+    .places h2,
+    .food h2 {
+        font-size: 1.8rem;
+    }
+}
