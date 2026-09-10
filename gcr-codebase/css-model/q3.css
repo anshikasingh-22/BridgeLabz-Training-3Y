@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+    z-index: 10;
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px;
+
+    /* Keeps background fixed while scrolling */
+    background-attachment: fixed;
+}
+
+.linear-section {
+    background: linear-gradient(120deg, #4facfe, #00f2fe);
+}
+
+.radial-section {
+    background: radial-gradient(circle, #ff9a9e, #fad0c4, #a18cd1);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+}

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #222;
+}
+
+header,
+footer {
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+.box-model {
+    min-height: 55vh;
+
+    /* Centers the demonstration */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.margin-layer {
+    padding: 30px;
+    background-color: #ddd;
+    outline: 3px dashed #555;
+}
+
+.border-layer {
+    padding: 20px;
+    background-color: #aaa;
+    border: 10px solid #555;
+}
+
+.padding-layer {
+    padding: 30px;
+    background-color: #90caf9;
+}
+
+.content-layer {
+    width: 180px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border: 2px solid #222;
+    font-weight: bold;
+}
+
+.description {
+    max-width: 350px;
+    text-align: left;
+}
+
+/* Box-sizing demonstration */
+.box-sizing-demo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.default-box,
+.border-box {
+    width: 250px;
+    height: 120px;
+    padding: 20px;
+    border: 10px solid #333;
+    background-color: #c8e6c9;
+}
+
+/* Border-box includes padding and border in given width */
+.border-box {
+    box-sizing: border-box;
+    background-color: #ffccbc;
+}

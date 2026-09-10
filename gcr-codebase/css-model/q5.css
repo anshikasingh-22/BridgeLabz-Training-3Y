@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+/* Attribute selector:
+   Selects text input */
+input[type="text"] {
+    border: 2px solid #555;
+    padding: 10px;
+}
+
+/* Attribute selector:
+   Selects links whose href contains https */
+a[href^="https"] {
+    color: blue;
+    font-weight: bold;
+}
+
+/* :hover pseudo-class */
+a:hover {
+    color: red;
+}
+
+/* :focus pseudo-class */
+input:focus {
+    outline: 3px solid #90caf9;
+}
+
+/* :nth-child() pseudo-class */
+li:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+/* Pseudo-element */
+h2::before {
+    content: "★ ";
+}
+
+/* Pseudo-element */
+h2::after {
+    content: " ★";
+}
+
+/* Child combinator (>) */
+.parent > p {
+    color: darkblue;
+}
+
+/* Descendant combinator */
+.parent div p {
+    color: green;
+}
+
+/* Adjacent sibling combinator (+) */
+.parent h2 + p {
+    font-weight: bold;
+}
+
+/* General sibling combinator (~) */
+.parent h2 ~ p {
+    padding-left: 10px;
+}

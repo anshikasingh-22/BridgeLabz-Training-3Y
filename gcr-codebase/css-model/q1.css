@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.box {
+    width: 210px;
+    min-height: 150px;
+    background-color: white;
+    text-align: center;
+
+    /* Padding creates space inside the box */
+    padding: 20px;
+
+    /* Smooth hover transition */
+    transition: border-color 0.4s ease;
+}
+
+.solid {
+    border: 4px solid #333;
+}
+
+.dashed {
+    border: 4px dashed #333;
+}
+
+.double {
+    border: 6px double #333;
+}
+
+.groove {
+    border: 6px groove #333;
+}
+
+.rounded {
+    border: 4px solid #333;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+/* Border color changes smoothly on hover */
+.box:hover {
+    border-color: #e63946;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
