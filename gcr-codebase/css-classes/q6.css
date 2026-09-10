@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+.animation-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.animation-box {
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #90caf9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.moving-box {
+    animation: moveBox 3s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(-50px);
+    }
+
+    to {
+        transform: translateX(50px);
+    }
+}
+
+.bouncing-ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(40px);
+    }
+}
+
+.changing-text {
+    animation: colorChange 3s ease-in-out infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #222;
+    }
+
+    50% {
+        color: #d32f2f;
+    }
+
+    100% {
+        color: #1565c0;
+    }
+}
