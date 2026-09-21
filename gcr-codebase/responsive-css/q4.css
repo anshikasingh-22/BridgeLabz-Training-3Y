@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+.typography {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.typography section {
+    max-width: 1000px;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.7;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .typography {
+        padding: 35px 20px;
+    }
+
+    p {
+        line-height: 1.6;
+        margin-top: 15px;
+    }
+}
